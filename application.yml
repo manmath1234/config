@@ -2,3 +2,12 @@ spring:
    zipkin:
       base-url : http://127.0.1:9411/
       
+eureka:
+   client:
+      service-url:
+         defaultZone : "http://localhost:8760/eureka"
+      fetch-registry : true
+      register-with-eureka : true
+   instance:
+      hostname : "localhost"
+      port : 8760
